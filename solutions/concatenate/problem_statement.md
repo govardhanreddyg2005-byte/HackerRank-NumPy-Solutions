@@ -57,3 +57,19 @@ Print the concatenated array matrix.
 ```
 
 ---
+
+## Code Syntax & Core Logic
+
+### 1. `np.concatenate` Syntax Mechanics
+The standard syntax requires a tuple or list of arrays as its initial parameter:
+```python
+numpy.concatenate((array_1, array_2, ...), axis=0)
+```
+* **The Sequence Constraint:** The inputs **must** be wrapped inside a container like a tuple `(array_1, array_2)` rather than passed as direct independent arguments.
+* **The Dimension Constraint:** All structural dimensions *except* the targeted concatenation axis must match identically.
+
+### 2. Computational Axis Logic (\(Axis=0\))
+* **Row-Wise Stacking (\(Axis=0\)):** Passing `axis=0` pieces arrays together vertically (adds rows). The matrix width (\(P\) columns) remains unchanged, while the height expands from \(N\) and \(M\) into a combined array structure of size \((N+M) \times P\).
+* **Memory Management:** Unlike `reshape()`, concatenation creates a completely new array allocation block in computer memory rather than an isolated view, copying over the underlying data buffers sequentially.
+
+
