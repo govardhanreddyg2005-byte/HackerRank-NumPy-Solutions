@@ -35,3 +35,30 @@ print(numpy.eye(8, 7, k = 1))    # 8 rows, 7 columns, 1 upper diagonal
 
 ---
 
+### Note
+In order to get the correct output format matching the test cases, you must use the legacy NumPy printing setting:
+```python
+numpy.set_printoptions(legacy='1.13')
+```
+
+### Input Format
+A single line containing space-separated integers N and M.  
+* N denotes the rows.  
+* M denotes the columns.
+
+### Output Format
+Print the N × M NumPy array matrix.
+
+### Sample Input
+```text
+3 3
+```
+
+### Sample Output
+```text
+[[ 1.  0.  0.]
+ [ 0.  1.  0.]
+ [ 0.  0.  1.]]
+```
+
+---
