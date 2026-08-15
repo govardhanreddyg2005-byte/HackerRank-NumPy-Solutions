@@ -14,3 +14,24 @@ print(numpy.identity(3)) #3 is the rows and columns
 #  [ 0.  1.  0.]
 #  [ 0.  0.  1.]]
 ```
+
+### eye
+The eye tool returns a 2-D array with 1's as the diagonal and 0's elsewhere. The diagonal can be main, upper, or lower depending on the optional parameter k. A positive k increases the diagonal, while a negative k decreases it.
+
+```python
+import numpy
+print(numpy.eye(8, 7, k = 1))    # 8 rows, 7 columns, 1 upper diagonal
+
+# Output :
+# [[ 0.  1.  0.  0.  0.  0.  0.]
+#  [ 0.  0.  1.  0.  0.  0.  0.]
+#  [ 0.  0.  0.  1.  0.  0.  0.]
+#  [ 0.  0.  0.  0.  1.  0.  0.]
+#  [ 0.  0.  0.  0.  0.  1.  0.]
+#  [ 0.  0.  0.  0.  0.  0.  1.]
+#  [ 0.  0.  0.  0.  0.  0.  0.]
+#  [ 0.  0.  0.  0.  0.  0.  0.]]
+```
+
+---
+
