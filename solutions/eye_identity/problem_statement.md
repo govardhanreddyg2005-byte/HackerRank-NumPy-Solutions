@@ -62,3 +62,12 @@ Print the N × M NumPy array matrix.
 ```
 
 ---
+
+## Code Syntax & Core Logic
+
+### 1. `identity` vs `eye` Matrix Allocation
+* **`np.identity(n)`**: Strictly creates a **square** matrix (N × N). It only accepts a single integer parameter representing both row and column totals.
+* **`np.eye(n, m)`**: Offers higher structural flexibility. It allows the creation of rectangular matrices (N × M) where the row count does not equal the column count. Because the test input parameters provide two distinct numbers (N and M), `np.eye()` is the correct choice here.
+
+### 2. Legacy Formatting Constraint (`np.set_printoptions`)
+Newer versions of NumPy format array printing tightly. Older HackerRank environment test cases expect a tiny empty whitespace padding character right before every integer/float element inside matrix console outputs. Forcing the layout to alignment standard `legacy='1.13'` is required to pass the visual string match tests.
