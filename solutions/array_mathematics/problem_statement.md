@@ -48,3 +48,18 @@ Print the result of the 6 mathematical operations in the exact order stated abov
 ```
 
 ---
+
+## Core Logic: `np.divide` vs `np.floor_divide`
+
+NumPy offers distinct built-in universal functions (`ufuncs`) to manage division depending on your requested numerical structure:
+
+| Function / Operator | NumPy Implementation | Mathematical Description | Example (\(11 \div 4\)) |
+| :--- | :--- | :--- | :--- |
+| **True Division** (`/`) | `np.divide(a, b)` | Returns the exact mathematical decimal quotient. | `2.75` |
+| **Floor Division** (`//`) | `np.floor_divide(a, b)` | Divides elements and rounds *down* to the nearest lower integer. | `2` |
+| **Modulo** (`%`) | `np.mod(a, b)` | Captures the leftover integer remainder after a floor division. | `3` |
+
+### Key Mechanics of Floor Division
+* **The "Floor" Rule:** Floor division always rounds down toward negative infinity. For example, while `np.floor_divide(11, 4)` is `2`, performing it on negative values like `np.floor_divide(-11, 4)` rounds down to `-3`.
+* **HackerRank Requirement:** The problem description specifically asks for **Integer Division**. If you use standard division (`/` or `np.divide`), your array items convert into floating-point numbers (`[2.75]`), failing the target output conditions. You must use `//` or `np.floor_divide` to preserve integer outputs.
+
