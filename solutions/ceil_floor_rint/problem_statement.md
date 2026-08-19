@@ -33,3 +33,12 @@ print(numpy.rint(my_array))             # [ 1.  2.  3.  4.  6.  6.  8.  9.  10.]
 ```
 
 ---
+
+### Task
+You are given a 1-D array, A. Your task is to print the `floor`, `ceil` and `rint` of all the elements of A.
+
+### Note
+In order to get the correct output format matching the test cases, you must use the legacy NumPy printing setting:
+```python
+numpy.set_printoptions(legacy='1.13')
+```
