@@ -42,3 +42,25 @@ In order to get the correct output format matching the test cases, you must use 
 ```python
 numpy.set_printoptions(legacy='1.13')
 ```
+
+### Input Format
+A single line of input containing space-separated elements of array A.
+
+### Output Format
+* On the first line, print the `floor` of the NumPy array.
+* On the second line, print the `ceil` of the NumPy array.
+* On the third line, print the `rint` of the NumPy array.
+
+### Sample Input
+```text
+1.1 2.2 3.3 4.4 5.5 6.6 7.7 8.8 9.9
+```
+
+### Sample Output
+```text
+[ 1.  2.  3.  4.  5.  6.  7.  8.  9.]
+[  2.   3.   4.   5.   6.   7.   8.   9.  10.]
+[ 1.  2.  3.  4.  6.  6.  8.  9.  10.]
+```
+
+---
