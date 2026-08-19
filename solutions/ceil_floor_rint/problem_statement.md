@@ -64,3 +64,16 @@ A single line of input containing space-separated elements of array A.
 ```
 
 ---
+
+## Core Logic & Rounding Mechanics
+
+NumPy provides distinct math rounding tools that handle floating-point values differently:
+
+### 1. `np.floor()` vs `np.ceil()` vs `np.rint()`
+* **`np.floor()`**: Always rounds down towards negative infinity (e.g., `1.7` becomes `1.0`, `-1.2` becomes `-2.0`).
+* **`np.ceil()`**: Always rounds up towards positive infinity (e.g., `1.2` becomes `2.0`, `-1.7` becomes `-1.0`).
+* **`np.rint()` (Round to Nearest Integer)**: Rounds to the *closest* integer. 
+  * *The Tie-Breaker Trick:* If a value falls exactly halfway between two integers (like `5.5`), NumPy uses **round-to-even** strategy (Banker's rounding). This is why `5.5` rounds to `6.0`, but `4.5` also rounds to `4.0`.
+
+### 2. Format Preservation
+All three mathematical tools return the values as **floating-point data types** (e.g., `1.` instead of `1`), which aligns with standard machine calculations and matches the exact challenge output format requirement.
