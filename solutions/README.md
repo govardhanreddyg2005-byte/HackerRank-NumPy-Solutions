@@ -3,8 +3,7 @@
 A structured repository tracking daily progress through the HackerRank NumPy module challenges.
 
 ## Repository File Tree
-```text
-HackerRank-NumPy-Solutions/
+```HackerRank-NumPy-Solutions/
 ├── README.md
 ├── requirements.txt
 ├── 01_arrays/
@@ -13,7 +12,9 @@ HackerRank-NumPy-Solutions/
 ├── 02_shape_reshape/
 │   ├── shape_reshape.py
 │   └── README.md
-└── 03_transpose_flatten/
-    ├── transpose_flatten.py
-    └── README.md
-```
+├── 03_transpose_flatten/
+│   ├── transpose_flatten.py
+│   └── README.md
+└── 04_eye_and_identity/
+    ├── eye_and_identity.py
+    └── README.md```
