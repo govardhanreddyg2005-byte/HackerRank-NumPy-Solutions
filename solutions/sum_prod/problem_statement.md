@@ -15,3 +15,21 @@ You are given a 2-D array with dimensions **N x M**.
 
 ### **Output Format**
 * Compute the sum along axis `0`. Then, print the product of that sum.
+
+### **Sample Input**
+```text
+2 2
+1 2
+3 4
+```
+
+### **Sample Output**
+```text
+24
+```
+
+### **Explanation**
+* The sum along axis `0` is:  
+  `[1+3, 2+4] = [4, 6]`
+* The product of this resultant array is:  
+  `4 * 6 = 24`
